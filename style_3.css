@@ -1,0 +1,97 @@
+:root {
+  --primary: #0d47a1;
+  --secondary: #1565c0;
+  --bg: #f5f7fb;
+  --card: #ffffff;
+  --text: #263238;
+  --border: #d8e2ef;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  direction: rtl;
+  text-align: right;
+}
+
+.hero {
+  min-height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background:
+    linear-gradient(rgba(13, 71, 161, 0.7), rgba(21, 101, 192, 0.7)),
+    url("petra.jpg") center/cover no-repeat;
+}
+
+.hero-overlay {
+  text-align: center;
+}
+
+.top-nav {
+  margin-top: 15px;
+}
+
+.top-nav a {
+  color: white;
+  text-decoration: none;
+  margin: 5px;
+  padding: 8px 12px;
+  border: 1px solid white;
+  border-radius: 6px;
+}
+
+.top-nav a:hover {
+  background: white;
+  color: var(--primary);
+}
+
+.page-container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 20px auto;
+}
+
+.card {
+  background: var(--card);
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+}
+
+.demo-grid {
+  display: grid;
+  gap: 15px;
+}
+
+.two-columns {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+img {
+  width: 300px;
+  height: 200pxs;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+video {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.site-footer {
+  background: var(--secondary);
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+
+.site-footer a {
+  color: white;
+  text-decoration: none;
+}
