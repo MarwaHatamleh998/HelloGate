@@ -1,0 +1,82 @@
+body {
+  background-color: #e3f2fd;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  direction: rtl;
+  text-align: right;
+}
+
+.page {
+  width: 90%;
+  max-width: 1000px;
+  margin: 20px auto;
+  padding: 10px;
+  background-color: white;
+  border: 1px solid #ddd;
+}
+
+h2 {
+  color: #1565c0;
+  margin-top: 20px;
+}
+
+p {
+  line-height: 1.6;
+  color: black;
+}
+
+.intro {
+  font-weight: 700;
+}
+
+.research-list {
+  background-color: red;
+  padding: 20px;
+}
+
+ul,
+ol {
+  margin-right: 20px;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+img {
+  width: 300px;
+  display: block;
+  margin: 20px auto;
+}
+
+a {
+  color: red;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: green;
+}
+
+.highlight {
+  background-color: #e3f2fd;
+  padding: 10px;
+  border-right: 5px solid #1e88e5;
+  margin-top: 20px;
+}
+
+.highlight h2 {
+  color: #0d47a1;
+}
+
+.image-box {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.source-note {
+  font-size: 16px;
+  margin-top: 20px;
+}
