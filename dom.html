@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+
+<body>
+
+    <p id="greeting" class="hello">Hi Here!</p>
+    <p class="hello">Hello!</p>
+    <script>
+
+        console.log(document.getElementById("greeting").innerText)
+        console.log(document.getElementsByTagName("p")[0].innerText)
+        console.log(document.getElementsByClassName("hello")[0].innerText)
+        console.log(document.querySelectorAll(".hello"))
+
+
+    </script>
+</body>
+
+</html>
