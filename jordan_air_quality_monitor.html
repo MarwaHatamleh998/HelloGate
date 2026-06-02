@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Air Quality Monitor</title>
+</head>
+
+<body>
+  <h1 id="mainTitle">Jordan Air Quality Monitor</h1>
+
+  <div class="city-card">
+    <h2 id="cityName">Amman</h2>
+    <p class="pollutionLevel">Pollution Level: 75</p>
+    <p class="airStatus">Moderate</p>
+  </div>
+
+  <div class="city-card">
+    <h2>Aqaba</h2>
+    <p class="pollutionLevel">Pollution Level: 40</p>
+    <p class="airStatus">Good</p>
+  </div>
+
+  <button id="updateBtn">Update Status</button>
+
+  <script>
+
+
+
+    let city = {
+      "city": "Amman",
+      "statusOfPopulation": "High",
+      "statusOfAir": "High",
+      checkAirQuality: function () {
+        console.log("The the status of Air is " + this.statusOfAir)
+      }
+    }
+
+    console.log(city.city);
+    console.log(city["statusOfPopulation"]);
+
+    document.getElementById("mainTitle").textContent = "Smart Air Monitoring System"
+    document.getElementById("cityName").textContent = "Irbid"
+
+    //استخدم التابع ()getElementsByClassName للوصول إلى جميع العناصر التي تحتوي الكلاس city-card.
+    //اطبع عدد البطاقات داخل console وغيّر لون أول بطاقة باستخدام JavaScript.
+
+    let cards = document.getElementsByClassName("city-card");
+
+    //cards[0].style.backgroundColor = "green"; 
+    //cards[1].style.backgroundColor = "lightgreen"; 
+    for (let card of cards) {
+      card.style.backgroundColor = "green";
+    }
+
+    //استخدم التابع ()getElementsByTagName للوصول إلى جميع عناصر <p>.
+    let ps = document.getElementsByTagName("p");
+    for (let p of ps) {
+      p.style.backgroundColor = "lightblue";
+    }
+
+    //  استخدم التابع ()querySelector للوصول إلى أول عنصر يحمل class باسم airStatus:
+    // غيّر النص العنصر إلى: "Warning".
+
+    let airStatus = document.querySelector(".airStatus").textContent = "Warning";
+
+    
+  </script>
+</body>
+
+</html>
